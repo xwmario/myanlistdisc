@@ -14,7 +14,7 @@ module Onebox
 
       def url
         slug = @url.match(/http?:\/\/myanimelist\.net\/anime\/(.+)/)[1]
-        "http://myanimelist.net/api/anime/#{slug}"
+        " http://myanimelist.net/api/anime/search.xml?q=#{slug}"
       end
 
       def to_html
